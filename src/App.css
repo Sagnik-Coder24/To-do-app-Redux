@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+br {
+  user-select: none;
+}
+
+#root {
+  margin: 0 auto;
+  width: 965px;
+  padding: 2rem;
+  text-align: center;
+}
+.logo-2 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #ffffff;
+  animation: logo-spin 1s linear infinite;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .outer .logo {
+    animation: logo-spin infinite 10s linear;
+  }
+}
+
+.card {
+  margin: 0 auto;
+  width: 80%;
+}
+.tasks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  height: 67.5px;
+  background-color: #848ccf;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.light {
+  opacity: 50%;
+}
+.tasks-outer {
+  border-radius: 10px;
+}
+.task-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8c00ff;
+  height: 125px;
+  padding: 2em;
+  border-radius: 10px;
+}
+.task-form input {
+  background-color: #e6cbfc;
+  width: 60%;
+  height: 70%;
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #ab44ff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.task-form input:focus {
+  background-color: #f2e2ff;
+  border-color: #580092;
+  box-shadow: 0 0 10px rgba(50, 0, 83, 0.5);
+  outline: none;
+}
+.task-form button {
+  width: 30%;
+  height: 70%;
+  background-color: #64189b;
+  border: 2px solid #500f7e;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+.task-form button:hover {
+  background-color: #3a0066;
+  text-decoration: underline;
+}
+
+.comp-del {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.comp-del button {
+  width: 45%;
+  padding: 10px 0;
+  background-color: #44698d;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.comp-del button:hover {
+  background-color: #1a252f;
+}
+.outer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  margin-bottom: 2rem;
+  user-select: none;
+  gap: 1em;
+}
+
+.outer h2 {
+  color: white;
+}
+.todo-indv {
+  cursor: pointer;
+  user-select: none;
+  max-width: 65%;
+}
+
+.todo-indv form input {
+  background-color: #494f85;
+  color: white;
+  padding: 5px 10px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.26);
+}
+
+.todo-indv form input:focus {
+  outline: none;
+}
+.footer {
+  margin-top: 3rem;
+  color: white;
+  opacity: 70%;
+}
+
+@media only screen and (max-width: 700px) {
+  .card {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .outer h2 {
+    font-size: 17px;
+  }
+  .tasks {
+    font-size: 13px;
+  }
+  .task-form input {
+    font-size: 14px;
+  }
+  .task-form button {
+    font-size: 14px;
+  }
+  .todo-indv form input {
+    padding: 2px;
+    font-size: 12px;
+  }
+}
