@@ -3,12 +3,14 @@
 A React + Vite web application for managing to-do tasks. The app uses Redux to store and update tasks. Users can add new tasks, mark them as completed, edit tasks, and delete tasks. The app is designed using CSS for a clean and responsive interface.
 
 ## Features
+- **Add new tasks**: Easily add tasks to keep track of your to-dos.
+- **Mark tasks as completed**: Keep track of completed tasks with a simple toggle.
+- **Edit existing tasks**: Edit your tasks at any time to make necessary changes.
+- **Delete tasks**: Remove tasks once they are no longer needed.
+- **Responsive design**: The app is built with CSS for a clean and responsive user interface, ensuring it works well on any device.
 
-- Add new tasks
-- Mark tasks as completed
-- Edit existing tasks
-- Delete tasks
-- Responsive design with CSS
+### New Feature:
+- **Installable as a PWA**: The app is a Progressive Web App (PWA), meaning it can be installed on your device and used offline, providing a native-like experience on both mobile and desktop.
 
 ## Getting Started
 
@@ -76,6 +78,10 @@ Netlify will automatically build and deploy your site. You can find your live si
 2. Mark tasks as completed by clicking the checkbox.
 3. Edit tasks by clicking on the task itself.
 4. Delete tasks by clicking the delete button.
+
+## Notes
+- For the PWA feature to work, ensure that your device is connected to the internet at least once so it can download and cache the necessary assets.
+- After installation, the app can be launched from your home screen (on mobile) or from the desktop (on supported browsers).
 
 ## Built With
 
